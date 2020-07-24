@@ -19,7 +19,7 @@ render() {
 	              
 	               <Card className="shadow">
                     <CardBody>
-                    	<h3 align="center" className="text-info"> Deelers </h3>
+                    	<h3 align="center" className="text-info"> Dealers </h3>
                     	<hr />
 		                <div className="row">
 		                	<div className="col-md-6 col-xs-12">

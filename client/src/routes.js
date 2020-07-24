@@ -40,7 +40,7 @@ const routing = () => (
 
             <Route exact path="/about" component={About} label="About"/>
             <Route exact path="/contactus" component={Contact} label="Contact"/>
-            <Route exact path="/deelears" component={Deelers} label="Deelers"/>
+            <Route exact path="/dealers" component={Deelers} label="Deelers"/>
             <Route exact path="/testnimonial" component={Testnimonial} label="Testnimonial"/>
 
             <PrivateRoute exact path="/add-stock" component={AddStock} label="AddStock"/>

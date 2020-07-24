@@ -280,7 +280,8 @@ background: #5ac3f2;
   padding: 15px;
 }
 .product-img img{
-  width: 100%
+  width: 100%;
+  max-height:600px;
 }
 .pagination{
   float: right;

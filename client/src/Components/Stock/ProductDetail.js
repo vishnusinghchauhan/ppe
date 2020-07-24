@@ -30,7 +30,7 @@ render() {
                     <div className="row">
                         <div className="col-md-4 col-xs-12">
                             <div className="product-img border-padding-15">
-                              <img src="main-product.png" alt="" />
+                              <img src={`uploads/${productDetails.product_img}`} alt="" />
                             </div>
                         </div>
                         <div className="col-md-8 col-xs-12">

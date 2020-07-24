@@ -77,7 +77,7 @@ exports.getProductList = (req, res) => {
         queryObj =  { is_deleted:false}
     }
     console.log("resssssssssssssss", queryObj)
-    Product.find(queryObj).populate({path:'company_id'}).skip(skip).limit(limit).sort({update_date: -1}).exec(function(err, stocklist) { 
+    Product.find(queryObj).populate({path:'company_id'}).skip(skip).limit(limit).sort({create_date: -1}).exec(function(err, stocklist) { 
         if(err){
             return res.status(400).json(SetResService.setResponse(applicationMessage.Message.Error.someThingWentWrong,  err, false, 400));
         }else{
