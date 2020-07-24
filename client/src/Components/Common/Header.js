@@ -89,28 +89,28 @@ class Header extends React.Component {
                               <span className="nav-link-inner--text">Stock <i class="fa fa-caret-down" aria-hidden="true"></i></span>
                             </DropdownToggle>
                             <DropdownMenu>
-                             <Link class="dropdown-item" to="add-stock">Add Stock</Link>
-                             <Link class="dropdown-item" to="list-stock">List Stock</Link>
+                             <NavLink className="dropdown-item" to="/add-stock">Add Stock</NavLink>
+                             <NavLink className="dropdown-item" to="/list-stock">List Stock</NavLink>
                             </DropdownMenu>
                           </UncontrolledDropdown>
                         }
                         {isUserLoggedin && 
                            <NavItem> 
-                              <Link className="nav-link loggin-menu" onClick={(e) => {e.preventDefault(); this.props.logoutRequest();  window.location.reload();}} >Logout</Link>
+                              <NavLink className="nav-link loggin-menu" onClick={(e) => {e.preventDefault(); this.props.logoutRequest();  window.location.reload();}} >Logout</NavLink>
                           </NavItem>
                         }
                         {!isUserLoggedin && 
                             <NavItem> 
-                                <Link className="nav-link loggin-menu" to="/login">User Login</Link>
+                                <NavLink className="nav-link loggin-menu" to="/login">User Login</NavLink>
                             </NavItem>
                         }
                         {!isUserLoggedin && 
                             <NavItem> 
-                                <Link className="nav-link loggin-menu" to="/sign-up">User Register</Link>
+                                <NavLink className="nav-link loggin-menu" to="/sign-up">User Register</NavLink>
                             </NavItem>
                         }
                         <NavItem> 
-                               <Link className="nav-link contact-menu" to="/contactus">Contact Us</Link>
+                               <NavLink className="nav-link contact-menu" to="/contactus">Contact Us</NavLink>
                         </NavItem>
                   </Nav>
               </Nav>
