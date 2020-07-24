@@ -89,24 +89,24 @@ class Header extends React.Component {
                               <span className="nav-link-inner--text">Stock <i class="fa fa-caret-down" aria-hidden="true"></i></span>
                             </DropdownToggle>
                             <DropdownMenu>
-                             <NavLink className="dropdown-item" to="/add-stock">Add Stock</NavLink>
-                             <NavLink className="dropdown-item" to="/list-stock">List Stock</NavLink>
+                             <Link className="dropdown-item" to="/add-stock">Add Stock</Link>
+                             <Link className="dropdown-item" to="/list-stock">List Stock</Link>
                             </DropdownMenu>
                           </UncontrolledDropdown>
                         }
                         {isUserLoggedin && 
                            <NavItem> 
-                              <NavLink className="nav-link loggin-menu" onClick={(e) => {e.preventDefault(); this.props.logoutRequest();  window.location.reload();}} >Logout</NavLink>
+                              <Link className="nav-link loggin-menu" onClick={(e) => {e.preventDefault(); this.props.logoutRequest();  window.location.reload();}} >Logout</Link>
                           </NavItem>
                         }
                         {!isUserLoggedin && 
                             <NavItem> 
-                                <NavLink className="nav-link loggin-menu" to="/login">User Login</NavLink>
+                                <Link className="nav-link loggin-menu" to="/login">User Login</Link>
                             </NavItem>
                         }
                         {!isUserLoggedin && 
                             <NavItem> 
-                                <NavLink className="nav-link loggin-menu" to="/sign-up">User Register</NavLink>
+                                <Link className="nav-link loggin-menu" to="/sign-up">User Register</Link>
                             </NavItem>
                         }
                         <NavItem> 
