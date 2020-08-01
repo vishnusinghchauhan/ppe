@@ -11,7 +11,7 @@ footer{
         background-size: cover;
 }
 .container{
-  max-width: 90% !important;
+  max-width: 98% !important;
 }
 
 .m-t-md{
@@ -100,7 +100,7 @@ footer{
 
 .footer-heading{
       font-weight: bold;
-    color: #3f9ce1;
+    color: #89d5ec;
 }
 .footer-new-heading{
      font-weight: bold;
@@ -191,6 +191,10 @@ color: #fff;
 .login-gray{
   background: #fafafa;
     padding: 50px;
+    margin-top: 87px;
+}
+.register-gray{
+ margin-top: 87px;
 }
 .breadcum{
      background: #f4f4f4;
@@ -215,30 +219,45 @@ color: #fff;
 }
 .navbar-dark .navbar-nav .nav-link{
   color: #fff !important;
+  padding: 28px;
+  font-size:20px;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{
-      color: #ffc107  !important;
+      color: #fff  !important;
+      border-bottom: 2px solid  #efd87b;
 }
 
 .contact-menu{
       background: #efd87b;
       border-radius: 5px;
       margin-left: 5px;
+      padding: 10px 20px !important;
 }
 .loggin-menu{
-   background: #4fc9ee;
-      border-radius: 5px;
-       margin-left: 5px;
+  background: #4fc9ee;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 10px 20px !important;
 }
-
+.loggin-menu:hover, .contact-menu:hover{
+       border-bottom: 0px !important 
+}
+.navbar-brand{
+  margin: 15px;
+}
 .home-container{
   padding: 40px 0px;
 }
 .home-container .top{
-  width: 500px;
+  width: 800px;
   margin: auto;
   margin-bottom: 20px
+}
+.home-container .top p{
+      font-size: 20px;
+    font-weight: bold;
+    color: #636f70;
 }
 .home-container  .box{
   border: 1px solid #eee;
@@ -247,6 +266,7 @@ color: #fff;
 }
 .gray-container{
     background: #f7f7f79c;
+        margin-top: 87px;
 }
 .social-icon li a i{
 background: #5ac3f2;
@@ -389,7 +409,7 @@ color: #000;
 .product-box{
     border: 1px solid #eee;
     background: #fff;
-    padding: 15px;
+    padding: 40px;
     text-align: center;
 }
 .product-box img{
@@ -425,28 +445,32 @@ td.truncate {
   background: url("/hero-banner.jpg");
   background-size: cover;
   overflow: hidden;
-      min-height: 600px;
+      min-height:1100px;
       position: relative;
 }
 .benner-info{
   color: #fff;
+      font-size: 22px;
 }
 .banner-heading{
   color: #fff;
+      font-size: 110px;
+    font-weight: bold;
 }
 .home-banner{
-      padding: 120px 0;
-    width: 330px;
+      padding: 25vh 0;
 }
 .banner-footer{
-    background: #3f3670;
+    background: #126da2;
     text-align: center;
     padding: 5px;
         position: absolute;
     width: 100%;
     bottom: 0;
 }
-
+.tcell{
+display: table;  overflow: hidden;
+}
 .view-all-home{
       display: block;
     overflow: hidden;
@@ -458,7 +482,12 @@ td.truncate {
   color: #fff;
 }
 .benner-icon{
-  border-right: 2px solid #000
+  border-right: 1px dashed  #00416b;
+      vertical-align: middle;
+    display: table-cell;
+    width: 250px !important;
+    font-size: 22px;
+        padding: 30px 0;
 }
 .benner-icon:last-child{
   border-right: none
@@ -487,4 +516,19 @@ td.truncate {
 
 .border-radius-n{
   border-radius: 0px !important; 
+}
+
+#header{
+     background: #4c555ebf;
+    padding: 0px
+}
+.banner-sub{
+      color: #efd87b;
+    font-size: 50px;
+}
+.text-head{
+      color: #126da2;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }

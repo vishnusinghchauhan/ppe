@@ -52,7 +52,7 @@ class Header extends React.Component {
     <div>
 
       <ToastContainer position="top-right" />
-      <Navbar  className="navbar navbar-expand-lg navbar-dark bg-primary"  expand="lg" >
+      <Navbar  className="navbar navbar-expand-lg navbar-dark fixed-top" id="header"  expand="lg" >
           <Container>
             <NavbarBrand href="/" onClick={e => e.preventDefault()}>
                <img src="logo.png" alt="logo" />

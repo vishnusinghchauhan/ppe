@@ -46,7 +46,7 @@ render() {
     console.log("utddddddd", productList)
 
 	 return (
-	     <div className="gray-container">
+	     <div>
 	     		<div className="top-home">	
 		     			<div className="row">
 		     				<div className="col-md-6 col-xs-12">
@@ -54,14 +54,17 @@ render() {
 			     			<div className="col-md-6 col-xs-12">
 			     				<div className="home-banner">
 			     				<h2 className="banner-heading"> Itroducing infoNet Router </h2>
-			     				<p className="benner-info">It was popularised in the 1960s with the release of Letraset sheets containing </p>
-	    						<button type="submit" className="btn btn-warning">Write us to know more.!</button>
+			     				<h2 className="banner-sub"> Start from $36.00 </h2>
+			     				<p className="benner-info">-It was popularised in the 1960s with the release of Letraset sheets containing. It was popularised in the 1960s with the release of Letraset sheets containing </p>
+	    						
+	    						<button type="submit" className="btn btn-warning">Write us to know more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
 			     				</div>
 			     			</div>
 		     			</div>
 		     			<div className="banner-footer">
 			     			<div className="container">	
 			     				<div className="row">
+			     					<div className="tcell">
 			     					<div className="col-xs-12 col-md-2 benner-icon">
 			     						<img src="global-network-icon.png" alt=" "/>
 			     						<div className="benner-footer-info"> Low cost $ <br/> Global and Network </div>
@@ -86,6 +89,7 @@ render() {
 										<img src="logistic-solution-icon.png" alt=" "/>
 										<div  className="benner-footer-info"> logistic<br/>solution </div>
 			     					</div>
+			     					</div>
 			     				</div>
 			     			</div>
 		     			</div>
@@ -94,7 +98,7 @@ render() {
                 <div className="container">
 	                <div className="home-container">
 	                	<div className="top">
-	                		<h3 className="text-center text-info"> Our latest stock </h3>
+	                		<h3 className="text-center text-head"> Our latest stock </h3>
 	                		<p className="text-center"> Only thing you need to change is Solr port if you have already previous version of Solr running on port 8983. I have incremented it by on </p>
 	                	</div>
 	                </div>
@@ -102,7 +106,7 @@ render() {
 	                    {productList.length > 0 && productList.map((product, index) => (
 	                      <div className="col-md-3 col-xs-12 m-b-md" key={index}>
 	                        <div className="home product-box"  >
-	                            <img src="home-product2.png" alt="" id={product._id} onClick={this.getProductInfo} />
+                            	<img src={`uploads/${product.product_img}`} alt="" id={product._id}  />
 	                            <h4  className="truncate product-list-haeding " title={product.title}  > {product.title} </h4>
 	                            <div className="list-cmp-Name-home"> {product.company_id.name} </div> 
 	                            <h5 className="text-info m-b-n price-haeding"> <span>Price : </span>  $ {product.price} </h5>

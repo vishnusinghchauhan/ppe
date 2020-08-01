@@ -127,7 +127,7 @@ class Register extends React.Component {
 render() {
   const {step} = this.state;
 	 return (
-	     	   <div>
+	     	   <div className="register-gray">
             <div className="top-register">
               <div className="container">
                 <div className="row">
@@ -142,7 +142,7 @@ render() {
                 </div>
                   </div>
             </div>
-            <div className="login-gray">
+              <div className="login-gray">
                 <div className="register-container">
                   <h3 className="text-center text-info"> Sign-up </h3>
                   <div className="breadcum"> 
