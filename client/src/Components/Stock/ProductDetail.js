@@ -25,6 +25,7 @@ render() {
   var productDetails = this.props && this.props.stock && this.props.stock.productDetails;
   console.log("productDetails...",productDetails)
 	 return (
+        <div className="stock-list">
             <div className="product-container">
                 <div className="container">
                     <div className="row">
@@ -96,6 +97,7 @@ render() {
                    </div>
                 </div>
             </div>
+        </div>
         )
 	}
 }

@@ -322,8 +322,9 @@ background: #5ac3f2;
     padding: 12px;
 }
 .top-list{
-  background: #000;
-  padding: 15px;
+  background: #323b44c2;
+  padding: 30px;
+  margin-top: 87px;
 }
 .top-list-srch{
   width: 500px;
@@ -377,6 +378,11 @@ color: #000;
 .price-haeding{
   color: #1c4b65;
   font-weight: bold;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.price-haeding span{
+font-size: 16px;
 }
 .top-filter{
     padding: 15px;
@@ -405,6 +411,10 @@ color: #000;
 .product-container{
     padding: 40px 0px;
     background: #fafafa;
+}
+.product-container .top{
+  width: 700px;
+  margin: auto;
 }
 .product-box{
     border: 1px solid #eee;
@@ -458,7 +468,7 @@ td.truncate {
     font-weight: bold;
 }
 .home-banner{
-      padding: 25vh 0;
+      padding: 30px 0;
 }
 .banner-footer{
     background: #126da2;
@@ -493,21 +503,27 @@ display: table;  overflow: hidden;
   border-right: none
 }
 .list-cmp-Name-home{
-      background: #000;
+      background: #050505;
     color: #fff;
-    margin-bottom: 8px;
+        width: max-content;
+    margin: auto;
+    padding: 2px 15px;
 }
 
 .testnimonial .carousel h3{
   color: #000;
-    font-size: 22px;
-    letter-spacing: 1px;
-    font-style: oblique;
+    font-size: 20px;
 }
 .testnimonial .carousel p{
-     color: orange;
+    color: #706F66;
     letter-spacing: 1px;
     font-style: italic;
+    position: absolute;
+    top: -43px;
+    margin: auto;
+    width: 100%;
+    font-weight: bold;
+
 }
 .testnimonial p, .about p, .deelers p{
   font-size: 18px;
@@ -527,8 +543,27 @@ display: table;  overflow: hidden;
     font-size: 50px;
 }
 .text-head{
-      color: #126da2;
-    font-size: 50px;
+     color: #126da2;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: url(/heading-bg-circle.png);
+    background-repeat: no-repeat;
+    background-position: 30% 0;
+    padding-top: 16px;; 
+}
+.stock-list{
+  margin-top: 87px;
+}
+
+.home-btn{
+      padding: 10px 12px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+}
+.text-client-says{
+ color: #126da2;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
 }

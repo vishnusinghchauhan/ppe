@@ -65,7 +65,7 @@ render() {
   var stockCounts = this.props && this.props.stock && this.props.stock.productTotal;
   console.log("utddddddd", productList)
 	 return (
-            <div>
+          <div className="stock-list">
             <div className="top-list">
             <div className="top-list-srch">
             <div class="input-group">
@@ -88,7 +88,7 @@ render() {
             <div className="container">
                     <div className="row">
                       <div className="top">
-                        <h3 className="text-center text-info"> Our latest stock </h3>
+                        <h3 className="text-center text-head"> Our latest stock </h3>
                         <p className="text-center">
                          Only thing you need to change is Solr port if you have already previous version of Solr running on port 8983. I have incremented it by on 
                          Only thing you need to change is Solr port if you have already previous version of Solr running on port 8983. I have incremented it by on 

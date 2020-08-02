@@ -47,7 +47,30 @@ render() {
 
 	 return (
 	     <div>
+
+	  
+
 	     		<div className="top-home">	
+
+	    <div className="top-list">
+            <div className="top-list-srch">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <select class="custom-select" onChange={e => this.setState({ search_category: e.target.value })}>
+                <option selected value="">All Category</option>
+                <option value="Apple">Apple</option>
+                <option value="Server">Server</option>
+              </select>
+              </div>
+              <input type="text" class="form-control"  onChange={this.onInputChange} />
+              <div class="input-group-append">
+                <button class="btn btn-info border-radius-n" type="button">Search</button>
+              </div>
+            </div>
+            </div>
+            </div>
+
+
 		     			<div className="row">
 		     				<div className="col-md-6 col-xs-12">
 		     				</div>
@@ -57,7 +80,7 @@ render() {
 			     				<h2 className="banner-sub"> Start from $36.00 </h2>
 			     				<p className="benner-info">-It was popularised in the 1960s with the release of Letraset sheets containing. It was popularised in the 1960s with the release of Letraset sheets containing </p>
 	    						
-	    						<button type="submit" className="btn btn-warning">Write us to know more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+	    						<button type="submit" className="btn btn-warning home-btn">Write us to know more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
 			     				</div>
 			     			</div>
 		     			</div>
@@ -109,7 +132,7 @@ render() {
                             	<img src={`uploads/${product.product_img}`} alt="" id={product._id}  />
 	                            <h4  className="truncate product-list-haeding " title={product.title}  > {product.title} </h4>
 	                            <div className="list-cmp-Name-home"> {product.company_id.name} </div> 
-	                            <h5 className="text-info m-b-n price-haeding"> <span>Price : </span>  $ {product.price} </h5>
+	                            <h5 className="text-info-lb m-b-n price-haeding"> <span>Price : </span>${product.price} </h5>
 	                        </div>
 	                      </div>
 	                    ))} 
@@ -127,7 +150,7 @@ render() {
                 </div>
 
                 <div className="testinomial-home testnimonial">
-                	<h4 className="text-center text-warning"> What Our Clint Says </h4>
+                	<h4 className="text-center text-client-says"> What Our Clint Says </h4>
                		<UncontrolledCarousel items={items} />
                 </div>
          </div>

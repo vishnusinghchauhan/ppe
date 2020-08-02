@@ -115,6 +115,7 @@ class AddStock extends React.Component {
 
 render() {
 	 return (
+        <div className="stock-list">
             <div className="product-container">
               <div className="container">
                   <div className="nav-wrapper">
@@ -229,6 +230,7 @@ render() {
                   </Card>
                 </div>
             </div>
+        </div>
         )
 	}
 }
