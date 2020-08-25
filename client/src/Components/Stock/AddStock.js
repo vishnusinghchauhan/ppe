@@ -171,10 +171,10 @@ render() {
                                     <input className="form-control" type="text" placeholder="Model"   onChange={e => this.setState({ model: e.target.value })} />
                                 </div>
                                 <div  className="col-md-6 col-xs-12 form-group">
-                                    <input className="form-control" type="text" placeholder="Quantity"   onChange={e => this.setState({ quantity: e.target.value })} />
+                                    <input className="form-control" type="number" placeholder="Quantity"   onChange={e => this.setState({ quantity: e.target.value })} />
                                 </div>
                                 <div  className="col-md-6 col-xs-12 form-group">
-                                    <input className="form-control" type="text" placeholder="Price"   onChange={e => this.setState({ price: e.target.value })} />
+                                    <input className="form-control" type="number" placeholder="Price"   onChange={e => this.setState({ price: e.target.value })} />
                                 </div>
                                 <div  className="col-md-6 col-xs-12 form-group">
                                     <select className="custom-select"  onChange={e => this.setState({ condition: e.target.value })} >

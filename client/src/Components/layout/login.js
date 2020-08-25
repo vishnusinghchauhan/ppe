@@ -40,7 +40,7 @@ render() {
                   				<p className="text-center m-b-md"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor . </p>
     							    <form  method="post" onSubmit={this.submitValue}>
     							        <div className="form-group">
-    							            <input type="text" className="form-control" placeholder="Enter your email id" required="required"  defaultValue={this.state.email}  onChange={e => this.setState({ email: e.target.value })} />
+    							            <input type="email" className="form-control" placeholder="Enter your email id" required="required"  defaultValue={this.state.email}  onChange={e => this.setState({ email: e.target.value })} />
     							        </div>
     							        <div className="form-group">
     							            <input type="password" className="form-control" placeholder="Password" required="required" defaultValue={this.state.password}  onChange={e => this.setState({ password: e.target.value })}  />

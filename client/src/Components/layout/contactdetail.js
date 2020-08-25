@@ -31,14 +31,14 @@ class ContactDetails extends Component{
                        <div class="input-group-append">
                         <span class="input-group-text" id="basic-addon2">+91</span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Mobile Number" defaultValue={values.mobile_no} onChange={this.props.handleChange('mobile_no')} />
+                      <input type="number"  class="form-control" placeholder="Mobile Number" defaultValue={values.mobile_no} onChange={this.props.handleChange('mobile_no')} />
                     </div>
 
                     <div class="input-group mb-3 col-md-6 col-xs-12">
                        <div class="input-group-append">
                         <span class="input-group-text" id="basic-addon2">+91</span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Mobile Number"  defaultValue={values.mobile_no1} onChange={this.props.handleChange('mobile_no1')} />
+                      <input type="number"  class="form-control" placeholder="Mobile Number"  defaultValue={values.mobile_no1} onChange={this.props.handleChange('mobile_no1')} />
                     </div>
 
 

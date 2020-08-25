@@ -17,7 +17,7 @@ class Userinfo extends Component{
 	            	<span className="register-heading text-info"> User Info : </span>
 	            	<div className="row m-t-md" >
 	            		<div  className="col-md-6 col-xs-12 form-group">
-	            			<input class="form-control" type="text" placeholder="Enter your email id"  defaultValue={values.email} onChange={this.props.handleChange('email')}   />
+	            			<input class="form-control" type="email" placeholder="Enter your email id"  defaultValue={values.email} onChange={this.props.handleChange('email')}   />
 	            		</div>
 	            		<div  className="col-md-6 col-xs-12 form-group">
 	            			<input type="file" class="form-control-file" id="exampleFormControlFile1" />

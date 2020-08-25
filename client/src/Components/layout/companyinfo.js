@@ -88,7 +88,7 @@ class CompanyInfo extends Component{
 
 
                         <div  className="col-md-6 col-xs-12 form-group">
-                            <input class="form-control" type="text" placeholder="year established" defaultValue={values.year} onChange={this.props.handleChange('year')} />
+                            <input class="form-control" type="number" placeholder="year established" defaultValue={values.year} onChange={this.props.handleChange('year')} />
                         </div>
 
                         <div  className="col-md-6 col-xs-12 form-group">
