@@ -45,7 +45,7 @@ const routing = () => (
 
             <PrivateRoute exact path="/add-stock" component={AddStock} label="AddStock"/>
             <PrivateRoute exact path="/list-stock" component={StockList} label="StockList"/>
-            <PrivateRoute exact path="/stock-product-detail" component={ProductDetail} label="ProductDetail"/>
+            <Route exact path="/stock-product-detail" component={ProductDetail} label="ProductDetail"/>
             <PrivateRoute exact path="/dashboard" component={Dashboard} label="Dashboard"/>
 	    
         </Switch>

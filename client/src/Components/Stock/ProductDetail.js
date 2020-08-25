@@ -23,7 +23,9 @@ class ProductDetail extends React.Component {
 
 render() {
   var productDetails = this.props && this.props.stock && this.props.stock.productDetails;
-  console.log("productDetails...",productDetails)
+  var isUserLoggedin =  this.props && this.props.login && this.props.login.loggedIn
+
+  console.log("isUserLoggedinisUserLoggedin...",isUserLoggedin)
 	 return (
         <div className="stock-list">
             <div className="gray-container">
@@ -92,7 +94,14 @@ render() {
                             <div className="border-padding-15">
                               <h5 className="text-info" > Send inquery about this stock item </h5>
                               <textarea class="form-control m-b-md" id="address" rows="4" placeholder="Address"  ></textarea>
-                              <button className="btn btn-info m-r-md" id={productDetails._id} onClick={this.sendInquiry}>  <i class="fa fa-long-arrow-left" aria-hidden="true"></i>  Send Inquiry</button>
+
+                              {isUserLoggedin 
+                                ? 
+                                  <button className="btn btn-info m-r-md" id={productDetails._id} onClick={this.sendInquiry}>  <i class="fa fa-long-arrow-left" aria-hidden="true"></i>  Send Inquiry</button>
+                                :
+                                <button className="btn btn-info m-r-md" disabled={true} > Please Login to send Inquiry! </button>
+                                }
+
                             </div>
                         </div>
                    </div>
@@ -107,7 +116,8 @@ render() {
 const mapStateToProps = (state) => {
   return {
     user: state.user,
-    stock: state.stock
+    stock: state.stock,
+    login: state.login,
   }
 }
 const mapDispatchToProps = (dispatch) => {

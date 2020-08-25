@@ -3,6 +3,8 @@ import axios from "axios";
 import { UncontrolledCarousel } from "reactstrap";
 import { connect } from 'react-redux';
 import { getStockList } from '../../Actions/StockAction';
+import setAuthToken from "../../utils/setAuthToken";
+import { fetchUserData } from "../../Actions/CompanyAction";
 
 const items = [
   {
@@ -30,14 +32,30 @@ class Home extends React.Component {
           pageLimit:12,
           search_category:'',
           search_item:''
-        };
+		};
+		this.getProductInfo = this.getProductInfo.bind(this); 
     }
     componentDidMount() {
+		setAuthToken()
+		this.props.fetchUserData().then((result)=>{
+			this.props.getAuth()
+		}).catch((err)=>{
+			
+		})
+
       var filterObj = {} 
           filterObj.pageIndex =  this.state.activePage;
           filterObj.pageLimit= this.state.pageLimit;
       this.props.getStockList(filterObj);
-    }
+	}
+	getProductInfo(e){
+		var productId = e.target.id
+		console.log("productIdproductId", productId)
+		this.props.history.push({
+		  pathname: "/stock-product-detail",
+		  state: {  productID: productId }
+		});
+	  }
 
 
 render() {
@@ -79,7 +97,6 @@ render() {
 									<h2 className="banner-heading"> Itroducing <br /> infoNet Router </h2>
 									<h2 className="banner-sub"> Start from $36.00 </h2>
 									<p className="benner-info">-It was popularised in the 1960s with the release of Letraset sheets containing. It was popularised in the 1960s with the release of Letraset sheets containing </p>
-									
 									<button type="submit" className="btn home-btn btn-light-yellow">Write us to know more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
 									</div>
 								</div>
@@ -132,7 +149,7 @@ render() {
 	                    {productList.length > 0 && productList.map((product, index) => (
 	                      <div className="col-md-3 col-xs-12 m-b-md" key={index}>
 	                        <div className="home product-box"  >
-                            	<img src={`uploads/${product.product_img}`} alt="" id={product._id}  className="m-b-lg" />
+								<img src={`uploads/${product.product_img}`} alt="" id={product._id} onClick={this.getProductInfo} className="m-b-md" />
 	                            <h4  className=" product-list-haeding " title={product.title}  > {product.title} </h4>
 	                            <div className="list-cmp-Name-home m-t-sm"> {product.company_id.name} </div> 
 	                            <h5 className="text-info-lb m-b-n price-haeding"> <span>Price : </span>${product.price} </h5>
@@ -167,12 +184,13 @@ render() {
 const mapStateToProps = (state) => {
   return {
     user: state.user,
-    stock: state.stock,
+	stock: state.stock,
   }
 }
 const mapDispatchToProps = (dispatch) => {
   return {
-    getStockList: (filterObj  ) => dispatch(getStockList(filterObj))
+	getStockList: (filterObj  ) => dispatch(getStockList(filterObj)),
+	fetchUserData: () => dispatch(fetchUserData())
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
