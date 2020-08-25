@@ -19,21 +19,21 @@ class Footer extends React.Component {
                  <div className="col-md-3 col-xs-12">
                     <h4 className="footer-heading"> Company </h4>
                       <ul  className="footer-menu">
-                        <li> <Link to="#"> Link </Link> </li>
-                        <li> <Link to="#"> Link </Link> </li>
-                        <li> <Link to="#"> Link </Link> </li>
-                        <li> <Link to="#"> Link </Link> </li>
-                        <li> <Link to="#"> Link </Link> </li>
+                        <li> <Link to="#">Company Link </Link> </li>
+                        <li> <Link to="#">Company Link </Link> </li>
+                        <li> <Link to="#">Company Link </Link> </li>
+                        <li> <Link to="#">Company Link </Link> </li>
+                        <li> <Link to="#">Company Link </Link> </li>
                       </ul>
                 </div>
                  <div className="col-md-3 col-xs-12">
                     <h4 className="footer-heading"> Services </h4>
                       <ul className="footer-menu">
-                        <li> <Link to="#"> Link </Link> </li>
-                        <li> <Link to="#"> Link </Link> </li>
-                        <li> <Link to="#"> Link </Link> </li>
-                        <li> <Link to="#"> Link </Link> </li>
-                        <li> <Link to="#"> Link </Link> </li>
+                        <li> <Link to="#">Company Link </Link> </li>
+                        <li> <Link to="#">Company Link </Link> </li>
+                        <li> <Link to="#">Company Link </Link> </li>
+                        <li> <Link to="#">Company Link </Link> </li>
+                        <li> <Link to="#">Company Link </Link> </li>
                       </ul>
                 </div>
                  <div className="col-md-3 col-xs-12">

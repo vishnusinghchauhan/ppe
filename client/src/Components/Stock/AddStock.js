@@ -116,7 +116,7 @@ class AddStock extends React.Component {
 render() {
 	 return (
         <div className="stock-list">
-            <div className="product-container">
+            <div className="gray-container">
               <div className="container">
                   <div className="nav-wrapper">
                     <Nav

@@ -48,42 +48,44 @@ render() {
 	 return (
 	     <div>
 
-	  
-
 	     		<div className="top-home">	
+					<div className="top-list">
+						<div className="top-list-srch">
+						<div className="input-group">
+						<span className="dropIcon"></span>
+						<div className="input-group-prepend">
+							<select className="custom-select left-radius right-border height50 border-none select-yellow" onChange={e => this.setState({ search_category: e.target.value })}>
+							<option selected value="">All Category</option>
+							<option value="Apple">Apple</option>
+							<option value="Server">Server</option>
+						</select>
+						</div>
+						<input type="text" className="form-control right-border height50 border-none"  onChange={this.onInputChange} />
+						<div className="input-group-append">
+							<button className="btn btn-light-blue" type="button">Search</button>
+						</div>
+						</div>
+						</div>
+						</div>
 
-	    <div className="top-list">
-            <div className="top-list-srch">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <select class="custom-select" onChange={e => this.setState({ search_category: e.target.value })}>
-                <option selected value="">All Category</option>
-                <option value="Apple">Apple</option>
-                <option value="Server">Server</option>
-              </select>
-              </div>
-              <input type="text" class="form-control"  onChange={this.onInputChange} />
-              <div class="input-group-append">
-                <button class="btn btn-info border-radius-n" type="button">Search</button>
-              </div>
-            </div>
-            </div>
-            </div>
 
-
-		     			<div className="row">
-		     				<div className="col-md-6 col-xs-12">
-		     				</div>
-			     			<div className="col-md-6 col-xs-12">
-			     				<div className="home-banner">
-			     				<h2 className="banner-heading"> Itroducing infoNet Router </h2>
-			     				<h2 className="banner-sub"> Start from $36.00 </h2>
-			     				<p className="benner-info">-It was popularised in the 1960s with the release of Letraset sheets containing. It was popularised in the 1960s with the release of Letraset sheets containing </p>
-	    						
-	    						<button type="submit" className="btn btn-warning home-btn">Write us to know more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-			     				</div>
-			     			</div>
+		     			
+						<div className="container">
+							<div className="row">
+								<div className="col-md-6 col-xs-12">
+								</div>
+								<div className="col-md-6 col-xs-12">
+									<div className="home-banner">
+									<h2 className="banner-heading"> Itroducing <br /> infoNet Router </h2>
+									<h2 className="banner-sub"> Start from $36.00 </h2>
+									<p className="benner-info">-It was popularised in the 1960s with the release of Letraset sheets containing. It was popularised in the 1960s with the release of Letraset sheets containing </p>
+									
+									<button type="submit" className="btn home-btn btn-light-yellow">Write us to know more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+									</div>
+								</div>
+							</div>
 		     			</div>
+						 
 		     			<div className="banner-footer">
 			     			<div className="container">	
 			     				<div className="row">
@@ -118,6 +120,7 @@ render() {
 		     			</div>
 	     		</div>
 
+				<div className="product-container">
                 <div className="container">
 	                <div className="home-container">
 	                	<div className="top">
@@ -129,9 +132,9 @@ render() {
 	                    {productList.length > 0 && productList.map((product, index) => (
 	                      <div className="col-md-3 col-xs-12 m-b-md" key={index}>
 	                        <div className="home product-box"  >
-                            	<img src={`uploads/${product.product_img}`} alt="" id={product._id}  />
-	                            <h4  className="truncate product-list-haeding " title={product.title}  > {product.title} </h4>
-	                            <div className="list-cmp-Name-home"> {product.company_id.name} </div> 
+                            	<img src={`uploads/${product.product_img}`} alt="" id={product._id}  className="m-b-lg" />
+	                            <h4  className=" product-list-haeding " title={product.title}  > {product.title} </h4>
+	                            <div className="list-cmp-Name-home m-t-sm"> {product.company_id.name} </div> 
 	                            <h5 className="text-info-lb m-b-n price-haeding"> <span>Price : </span>${product.price} </h5>
 	                        </div>
 	                      </div>
@@ -143,11 +146,14 @@ render() {
 	                    }
                 
                 		<div  className="view-all-home">
-							<button type="button" class="btn btn-warning">View All</button>
+							<button type="button" class="btn btn-light-yellow">View All</button>
 						</div>
 	                   
 	                  </div>
                 </div>
+				</div>
+
+
 
                 <div className="testinomial-home testnimonial">
                 	<h4 className="text-center text-client-says"> What Our Clint Says </h4>

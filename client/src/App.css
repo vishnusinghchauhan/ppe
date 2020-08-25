@@ -10,9 +10,7 @@ footer{
     background: url("/footer-bg.jpg");
         background-size: cover;
 }
-.container{
-  max-width: 98% !important;
-}
+
 
 .m-t-md{
   margin-top: 15px;
@@ -128,6 +126,7 @@ footer{
     color: #fff;
     border-radius: 20px 0px 0px 20px;
     padding: inherit;
+    width: 122%;
 }
 .footer-desc{
   color: #fff;
@@ -159,6 +158,9 @@ footer{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 42%; 
+}
+.navbar-brand{
+  padding: 15px 0 !important;
 }
 
 .top-register{
@@ -219,8 +221,8 @@ color: #fff;
 }
 .navbar-dark .navbar-nav .nav-link{
   color: #fff !important;
-  padding: 28px;
-  font-size:20px;
+  padding: 20px;
+  font-size: 15px;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{
@@ -232,20 +234,18 @@ color: #fff;
       background: #efd87b;
       border-radius: 5px;
       margin-left: 5px;
-      padding: 10px 20px !important;
+      padding: 6px 20px !important;
 }
 .loggin-menu{
   background: #4fc9ee;
   border-radius: 5px;
   margin-left: 5px;
-  padding: 10px 20px !important;
+  padding: 6px 20px !important;
 }
 .loggin-menu:hover, .contact-menu:hover{
        border-bottom: 0px !important 
 }
-.navbar-brand{
-  margin: 15px;
-}
+
 .home-container{
   padding: 40px 0px;
 }
@@ -266,7 +266,7 @@ color: #fff;
 }
 .gray-container{
     background: #f7f7f79c;
-        margin-top: 87px;
+        margin-top: 80px;
 }
 .social-icon li a i{
 background: #5ac3f2;
@@ -322,12 +322,12 @@ background: #5ac3f2;
     padding: 12px;
 }
 .top-list{
-  background: #323b44c2;
-  padding: 30px;
-  margin-top: 87px;
+  background: #323b44a3;
+  padding: 15px;
+  margin-top: 77px;
 }
 .top-list-srch{
-  width: 500px;
+  width: 600px;
   margin: auto;
 }
 .top-list-srch .custom-select, .top-list-srch  input  {
@@ -370,10 +370,10 @@ color: #000;
 .list-cmp-Name{
   color: #dcdcdc;
   font-weight: 500;
-  margin-top: 8px;
 }
 .product-list-haeding{
   color: #818181;
+  margin-bottom: 0px;
 }
 .price-haeding{
   color: #1c4b65;
@@ -409,7 +409,6 @@ font-size: 16px;
   font-weight: bold;
 }
 .product-container{
-    padding: 40px 0px;
     background: #fafafa;
 }
 .product-container .top{
@@ -419,12 +418,12 @@ font-size: 16px;
 .product-box{
     border: 1px solid #eee;
     background: #fff;
-    padding: 40px;
+    padding: 15px;
     text-align: center;
 }
 .product-box img{
   width: 100%;
-  height: 250px
+  height: 180px
 }
 .list-data{
   text-align: left;
@@ -452,19 +451,20 @@ td.truncate {
  }
 
  .top-home{
-  background: url("/hero-banner.jpg");
-  background-size: cover;
-  overflow: hidden;
-      min-height:1100px;
-      position: relative;
+    background: url("/hero-banner.jpg");
+    background-size: contain;
+    overflow: hidden;
+    min-height:100vh;
+    position: relative;
+    background-position: -75px 0;
 }
 .benner-info{
   color: #fff;
-      font-size: 22px;
+  font-size: 18px;
 }
 .banner-heading{
   color: #fff;
-      font-size: 110px;
+      font-size: 70px;
     font-weight: bold;
 }
 .home-banner{
@@ -496,8 +496,8 @@ display: table;  overflow: hidden;
       vertical-align: middle;
     display: table-cell;
     width: 250px !important;
-    font-size: 22px;
-        padding: 30px 0;
+    font-size: 16px;
+        padding: 0px 0;
 }
 .benner-icon:last-child{
   border-right: none
@@ -506,7 +506,7 @@ display: table;  overflow: hidden;
       background: #050505;
     color: #fff;
         width: max-content;
-    margin: auto;
+    margin: 10px auto ;
     padding: 2px 15px;
 }
 
@@ -540,7 +540,7 @@ display: table;  overflow: hidden;
 }
 .banner-sub{
       color: #efd87b;
-    font-size: 50px;
+    font-size: 35px;
 }
 .text-head{
      color: #126da2;
@@ -549,12 +549,13 @@ display: table;  overflow: hidden;
     letter-spacing: 1px;
     background: url(/heading-bg-circle.png);
     background-repeat: no-repeat;
-    background-position: 30% 0;
+    background-position: 26% 0;
     padding-top: 16px;; 
 }
-.stock-list{
-  margin-top: 87px;
+.text-head.list{
+  background-position: 35% 0;
 }
+
 
 .home-btn{
       padding: 10px 12px !important;
@@ -566,4 +567,40 @@ display: table;  overflow: hidden;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
+}
+.border-none{
+  border: none !important;
+}
+.left-radius{
+      border-radius: 4px 0 0 5px !important;
+}
+.right-border{
+      border-right: 3px solid #000 !important;
+}
+.height50{
+  height: 48px !important;
+}
+.btn-light-blue{
+    background: #4fc9ee !important;
+    color:#fff !important;
+}
+.btn-light-yellow{
+  background: #efd87b !important;
+}
+.select-yellow{
+    background: #efd87b !important;
+    color: #000 !important;
+}
+.dropIcon{
+  background: url("/drop.jpeg");
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 99px;
+  top: 14px;
+}
+.badge-ppe{
+  background: #55c7f2;
+  color: #fff;
 }

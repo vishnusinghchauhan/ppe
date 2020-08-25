@@ -22,7 +22,7 @@ const dbUrl = process.env.MONGO_NAME || "localhost";
 const dbCollection = process.env.DB_COLLECTION || "ppe";
 mongoose.connect(`mongodb://${dbUrl}/${dbCollection}`, {useNewUrlParser: true})
     .then(_ => console.log('MongoDB connection success'))
-	.catch(err => console.error(err));
+	.catch(err => console.error("mongod fail",err));
 mongoose.set('useCreateIndex', true);
 
 

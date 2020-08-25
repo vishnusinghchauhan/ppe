@@ -26,7 +26,8 @@ render() {
   console.log("productDetails...",productDetails)
 	 return (
         <div className="stock-list">
-            <div className="product-container">
+            <div className="gray-container">
+              <br ></br>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 col-xs-12">
@@ -75,7 +76,7 @@ render() {
                    <br />
                    <div className="row">
                         <div className="col-md-4 col-xs-12">
-                            <div className=" border-padding-15 text-center">
+                            {/* <div className=" border-padding-15 text-center">
                                 <img src="blank-product.jpg" alt="" className="m-b-xs" />
                                 <h5 className="text-info" > Company Name </h5>
                                 <p> 08:07 am Same time zone</p> 
@@ -85,7 +86,7 @@ render() {
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="col-md-8 col-xs-12">
                             <div className="border-padding-15">

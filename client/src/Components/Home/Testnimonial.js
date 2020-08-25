@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import { UncontrolledCarousel } from "reactstrap";
+
 import {
   Card,
   CardBody,
+  Row,
+  Col,
+  ButtonGroup,
+  Button
 } from "reactstrap";
+
+import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 
 const items = [
   {
@@ -23,6 +30,7 @@ const items = [
 
 
 class Testnimonial extends React.Component {
+
 
 
 render() {
@@ -45,6 +53,11 @@ render() {
                       <div className="col-md-6 col-xs-12" align="center">
                         <img src="home-product7.png" alt="" />
                       </div>
+
+                      <div className="container-fluid" style={{ paddingBottom: 20 }}>
+
+      </div>
+
 
                         <UncontrolledCarousel items={items} />
                       

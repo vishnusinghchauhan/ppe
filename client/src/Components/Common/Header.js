@@ -110,7 +110,7 @@ class Header extends React.Component {
                             </NavItem>
                         }
                         <NavItem> 
-                               <NavLink className="nav-link contact-menu" to="/contactus">Contact Us</NavLink>
+                               <Link className="nav-link contact-menu" to="/contactus">Contact Us</Link>
                         </NavItem>
                   </Nav>
               </Nav>
